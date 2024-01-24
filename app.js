@@ -18,4 +18,7 @@ npx sequelize-cli model:generate --name UserReadBook --attributes UserId:integer
 
 npx sequelize-cli model:generate --name Author --attributes name:string,age:integer,gender:string
 
+npx sequelize-cli migration:generate --name add-foreign-key-to-Users-and-Books
+
+
 */
