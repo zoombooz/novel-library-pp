@@ -21,7 +21,7 @@ module.exports = {
       gender: {
         type: Sequelize.STRING
       },
-      birthOfDate: {
+      dateOfBirth: {
         type: Sequelize.DATE
       },
       createdAt: {

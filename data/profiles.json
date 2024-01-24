@@ -1,0 +1,23 @@
+[
+    {
+        "name" : "Zaky Ahmad",
+        "email" : "zakythereader@mail.com",
+        "phone" : "081122334455",
+        "gender" : "Male",
+        "dateOfBirth" : "2000-03-29"
+    },
+    {
+        "name" : "Mohammad Aryana",
+        "email" : "aryanamoh@mail.com",
+        "phone" : "082244113366",
+        "gender" : "Male",
+        "dateOfBirth" : "1999-04-01"
+    },
+    {
+        "name" : "Kristin Alexandra",
+        "email" : "alexandrakristin@mail.com",
+        "phone" : "089988121234",
+        "gender" : "Female",
+        "dateOfBirth" : "2002-07-27"
+    }
+]
