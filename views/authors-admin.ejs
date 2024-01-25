@@ -30,8 +30,8 @@
                         <td><%= item.age %></td>
                         <td><%= item.gender %></td>
                         <td>
-                            <a class="btn btn-outline-primary" href="#" role="button">See Books</a>
-                            <a class="btn btn-outline-warning" href="#" role="button">Edit</a>
+                            <a class="btn btn-outline-primary" href="/books-admin?author=<%= item.id %>" role="button">See Books</a>
+                            <a class="btn btn-outline-warning" href="/authors/edit/<%= item.id %>" role="button">Edit</a>
                         </td>
                     </tr>
                 <% }) %>

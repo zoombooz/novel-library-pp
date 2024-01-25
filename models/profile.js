@@ -26,6 +26,11 @@ module.exports = (sequelize, DataTypes) => {
         },
         notEmpty : {
           msg : "Name tidak boleh kosong"
+        },
+        minLength(value) {
+          if (value.length < 5) {
+            throw new Error('Name minimal berjumlah 5 karakter');
+          }
         }
       }
     },
@@ -38,6 +43,11 @@ module.exports = (sequelize, DataTypes) => {
         },
         notEmpty : {
           msg : "Phone tidak boleh kosong"
+        },
+        minLength(value) {
+          if (value.length < 5) {
+            throw new Error('Phone minimal berjumlah 8 karakter');
+          }
         }
       }
     },
@@ -62,6 +72,10 @@ module.exports = (sequelize, DataTypes) => {
         },
         notEmpty : {
           msg : "Date of Birth tidak boleh kosong"
+        },
+        isBefore: {
+          args : "2012-01-01",
+          msg : "Anda harus berusia minimal 12 tahun untuk masuk"
         }
       }
     }

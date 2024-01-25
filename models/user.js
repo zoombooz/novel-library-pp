@@ -30,6 +30,11 @@ module.exports = (sequelize, DataTypes) => {
         },
         notEmpty : {
           msg : "Username tidak boleh empty"
+        },
+        minLength(value) {
+          if (value.length < 5) {
+            throw new Error('Username minimal berjumlah 5 karakter');
+          }
         }
       }
     },
@@ -42,6 +47,11 @@ module.exports = (sequelize, DataTypes) => {
         },
         notEmpty : {
           msg : "Password tidak boleh empty"
+        },
+        minLength(value) {
+          if (value.length < 5) {
+            throw new Error('Password minimal berjumlah 5 karakter');
+          }
         }
       }
     },
