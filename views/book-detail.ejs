@@ -6,9 +6,23 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="margin: 2rem;">
+    
     <div class="container">
-        <h1><%= book.title %></h1>
+        <div class="container" style="margin-bottom: 2rem;">
+          <h1><%= book.title %></h1>
+        </div>
+        <div class="container" style="margin-bottom: 2rem;">
+          <label><strong>Description</strong></labe>
+          <p><%= book.description %></p>
+        </div>
+        <div class="container" style="margin-bottom: 2rem;">
+          <label><strong>Story</strong></labe>
+          <p style="white-space: pre-line;"><%= book.text %></p>
+        </div>
+        
+
+        
     </div>
     <div class="container">
         
