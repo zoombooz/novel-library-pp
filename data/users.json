@@ -2,16 +2,22 @@
     {
         "username" : "zoombooz",
         "password" : "ZombieInYourGarden",
-        "ProfileId" : 1
+        "ProfileId" : 1,
+        "email" : "zakythereader@mail.com",
+        "role" : "user"
     },
     {
         "username" : "enlightenedCultivator",
         "password" : "DaoOfTheSword",
-        "ProfileId" : 2
+        "ProfileId" : 2,
+        "email" : "aryanamoh@mail.com",
+        "role" : "user"
     },
     {
         "username" : "KingArthur",
         "password" : "ExcaliburMyLove",
-        "ProfileId" : 3
+        "ProfileId" : 3,
+        "email" : "alexandrakristin@mail.com",
+        "role" : "admin"
     }
 ]

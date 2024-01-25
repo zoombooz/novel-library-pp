@@ -11,6 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Book.belongsTo(models.Author, {
+        foreignKey : 'AuthorId'
+      })
+
+      Book.belongsToMany(models.User, {
+        through : 'UserReadBooks'
+      })
     }
   }
   Book.init({
@@ -18,6 +25,7 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.BLOB,
     text: DataTypes.BLOB,
     genre: DataTypes.STRING,
+    image: DataTypes.BLOB,
     AuthorId: DataTypes.INTEGER
   }, {
     sequelize,

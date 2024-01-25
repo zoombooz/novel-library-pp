@@ -11,14 +11,60 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Profile.hasOne(models.User, {
+        foreignKey : 'ProfileId'
+      })
     }
   }
   Profile.init({
-    name: DataTypes.STRING,
-    email: DataTypes.STRING,
-    phone: DataTypes.STRING,
-    gender: DataTypes.STRING,
-    dateOfBirth: DataTypes.DATE
+    name: {
+      type : DataTypes.STRING,
+      allowNull : false,
+      validate : {
+        notNull : {
+          msg : "Name tidak boleh kosong"
+        },
+        notEmpty : {
+          msg : "Name tidak boleh kosong"
+        }
+      }
+    },
+    phone: {
+      type : DataTypes.STRING,
+      allowNull : false,
+      validate : {
+        notNull : {
+          msg : "Phone tidak boleh kosong"
+        },
+        notEmpty : {
+          msg : "Phone tidak boleh kosong"
+        }
+      }
+    },
+    gender: {
+      type : DataTypes.STRING,
+      allowNull : false,
+      validate : {
+        notNull : {
+          msg : "Gender tidak boleh kosong"
+        },
+        notEmpty : {
+          msg : "Gender tidak boleh kosong"
+        }
+      }
+    },
+    dateOfBirth: {
+      type : DataTypes.DATE,
+      allowNull : false,
+      validate : {
+        notNull : {
+          msg : "Date of Birth tidak boleh kosong"
+        },
+        notEmpty : {
+          msg : "Date of Birth tidak boleh kosong"
+        }
+      }
+    }
   }, {
     sequelize,
     modelName: 'Profile',
