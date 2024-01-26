@@ -5,8 +5,7 @@ const app = express()
 const port = 3000
 const session = require('express-session');
 
-const multer  = require('multer')
-const upload = multer({ dest: 'uploads/' })
+app.use('/assets', express.static(__dirname + "/assets"));
 
 app.set("view engine", "ejs")
 app.use(express.urlencoded({extended: true}))

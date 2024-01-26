@@ -22,7 +22,7 @@
             </div>
         <% } %>
     
-        <form action="/books/add" method="post" >
+        <form action="/books/add" method="post" enctype="multipart/form-data">
             <div class="mb-3">
             <label class="form-label" for="title">Title of the Book</label>
             <input class="form-control" type="varcar" id="title" name="title">
@@ -54,7 +54,7 @@
             </div>
             <div class="mb-3">
                 <label class="form-label" for="image">Photo Front of the Book</label>
-                <input class="form-control" type="text" id="image" name="image">
+                <input class="form-control" type="file" id="image" name="image">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

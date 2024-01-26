@@ -336,8 +336,8 @@ class Controller {
 // ----- Untuk Admin -----
     static async processBook(req, res){
         try {
+
             let data = req.body
-            console.log(data);
 
             // const buffer = req.file.buffer
             // console.log(buffer);
@@ -353,7 +353,7 @@ class Controller {
                 description: description,
                 text: text,
                 AuthorId: AuthorId,
-                image: image                
+                image: req.file.path                
             })
             res.redirect("/books-admin")
         } catch (error) {
