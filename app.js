@@ -2,7 +2,7 @@
 const express = require('express')
 const router = require('./router/router')
 const app = express()
-const port = 3000
+const port = 3001
 const session = require('express-session');
 
 app.use('/assets', express.static(__dirname + "/assets"));

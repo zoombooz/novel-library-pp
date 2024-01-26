@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "book-library-db",
+    "database": "book-db",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
